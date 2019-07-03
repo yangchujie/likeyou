@@ -6,8 +6,8 @@ var likeYou = document.getElementsByClassName('likeYou')[0];
 var likeYouWord = document.querySelectorAll('.likeYou>span');
 var count = 0;
 
-firstMark.style.height = `${window.screen.height}px`;
-likeYou.style.height = `${window.screen.height}px`;
+firstMark.style.height = `${window.innerHeight }px`;
+likeYou.style.height = `${window.innerHeight }px`;
 
 heart.onclick = function myFun() {
     if (scream !== null) {
