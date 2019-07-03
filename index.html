@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./css/animate.css">
+<style>
+    html,body{
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+    body{
+        background: transparent url("./static/back.png") no-repeat center;
+        background-size: 100% 100%;
+    }
+    .firstMark{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: rgb(120,120,120);
+        z-index: 100;
+        /*display: none;*/
+    }
+    .firstMark>img{
+        width: 50%;
+        display: inline-block;
+    }
+    .firstMark>span{
+        color: #fff;
+        font-size: 25px;
+        font-weight: bold;
+        text-shadow: 5px 5px 5px #000;
+    }
+    .likeYou{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background: transparent url("./static/back.png") center no-repeat;
+        background-size: 100% 100%;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        transition: all 1s;
+        opacity: 0;
+    }
+    .likeYou>span{
+        transition: all 1s;
+        opacity: 0;
+    }
+</style>
+<body>
+<div>
+    <audio autoplay="autoplay" id="music">
+        <source src="./static/EdSheeran-Photograph.mp3" type="audio/mpeg"/>
+        浏览器不支持audio
+    </audio>
+    <audio autoplay="autoplay" id="scream" src="./static/ohYeah.mp3">
+        浏览器不支持audio
+    </audio>
+    <div class="firstMark">
+        <img src="./static/love.gif" alt="" id="heart">
+        <span class="bounceIn">touch my heart</span>
+    </div>
+    <div class="likeYou">
+        <span>聂世莹</span>
+        <span>原谅我这个做的很烂</span>
+        <span>因为我以前没有做过这种东西，你是第一个</span>
+        <span>第一次听到你的声音的时候</span>
+        <span>我心跳就加快了</span>
+        <span>我喜欢和你一起笑</span>
+        <span>也愿意和你一起悲伤难过</span>
+        <span>正如背景这首歌所说的</span>
+        <span>Loving can hurt,Loving can hurt sometimes</span>
+        <span>如果我们彼此爱着对方，有时就会受伤</span>
+        <span>但是，如果你坚定，我就不怕任何东西</span>
+        <span>Our hearts were never broken</span>
+        <span>我生气的时候会说胡话，请不要在意</span>
+        <span>Holding me close until our eyes meet</span>
+        <span>You won't ever be alone</span>
+        <span>你不会再孤单</span>
+        <span>我想让你成为我的女朋友，我很喜欢你</span>
+        <span>喜欢你那霸道的样子，喜欢你吃醋时候的倔强</span>
+        <span>所以，我们网恋也行，奔现也可以</span>
+        <span>只要你不嫌弃我</span>
+        <span>然后</span>
+        <span>我好饿，我去吃饭了</span>
+        <span>就这么点东西做到了现在</span>
+        <span>做的不好以后慢慢改，需求你来提</span>
+        <span>要加什么东西你说了算</span>
+    </div>
+</div>
+</body>
+<script src="js/index.js"></script>
+</html>
