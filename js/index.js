@@ -7,8 +7,8 @@ var body = document.querySelector('body');
 var likeYouWord = document.querySelectorAll('.likeYou>span');
 
 
-firstMark.style.height = `${window.innerHeight}px`;
-likeYou.style.height = `${window.innerHeight}px`;
+// firstMark.style.height = `${window.innerHeight}px`;
+// likeYou.style.height = `${window.innerHeight}px`;
 
 heart.onclick = function myFun() {
     heartBreak.pause();
