@@ -1,16 +1,17 @@
 var audio = document.getElementById('music');
 var heart = document.getElementById('heart');
+var heartBreak = document.getElementById('heartBreak');
 var firstMark = document.getElementsByClassName('firstMark')[0];
 var likeYou = document.getElementsByClassName('likeYou')[0];
 var body = document.querySelector('body');
 var likeYouWord = document.querySelectorAll('.likeYou>span');
-var btn = document.querySelector('button');
 
 
 firstMark.style.height = `${window.innerHeight}px`;
 likeYou.style.height = `${window.innerHeight}px`;
 
-heart.onclick = function () {
+heart.onclick = function myFun() {
+    heartBreak.pause();
     if (audio !== null) {
         if (audio.paused) {
             firstMark.style.display = 'none';
@@ -21,10 +22,6 @@ heart.onclick = function () {
             }, 4000)
         }
     }
-};
-
-btn.onclick = function () {
-
 };
 
 function likeYouMyGirl() {
