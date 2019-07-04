@@ -14,9 +14,21 @@
         margin: 0;
         position: relative;
     }
-    body{
-        background: transparent url("./static/back.png") no-repeat center;
-        background-size: 100% 100%;
+    canvas {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        pointer-events: none;
+    }
+    body {
+        min-height: 100vh;
+        background: #000;
+        padding:0;
+        margin:0;
     }
     .firstMark{
         position: absolute;
@@ -47,17 +59,23 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        background: transparent url("./static/back.png") center no-repeat;
         background-size: 100% 100%;
         color: #fff;
         font-size: 18px;
         font-weight: bold;
-        transition: all 1s;
-        opacity: 0;
     }
     .likeYou>span{
         transition: all 1s;
         opacity: 0;
+    }
+    button{
+        color: #fff;
+        background-color: #000000;
+        border-radius: 5px;
+        width: 100px;
+        height: 30px;
+        font-size: 14px;
+        font-weight: bold;
     }
 </style>
 <body>
@@ -66,7 +84,7 @@
         <source src="./static/EdSheeran-Photograph.mp3" type="audio/mpeg"/>
         浏览器不支持audio
     </audio>
-    <audio id="scream" src="./static/ohYeah.mp3">
+    <audio autoplay="autoplay" id="scream" src="./static/heartBreak.mp3">
         浏览器不支持audio
     </audio>
     <div class="firstMark">
@@ -95,12 +113,14 @@
         <span>所以，我们网恋也行，奔现也可以</span>
         <span>只要你不嫌弃我</span>
         <span>然后</span>
-        <span>我好饿，我去吃饭了</span>
         <span>就这么点东西做到了现在</span>
         <span>做的不好以后慢慢改，需求你来提</span>
         <span>要加什么东西你说了算</span>
+<!--        <span><button>点我</button></span>-->
     </div>
 </div>
 </body>
+<script type="text/javascript" src='js/pixi.min.js'></script>
+<script type="module" src="js/script.js"></script>
 <script src="js/index.js"></script>
 </html>
